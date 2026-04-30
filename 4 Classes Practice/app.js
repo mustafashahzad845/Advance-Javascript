@@ -1,3 +1,6 @@
+//Class 1
+
+
 // var a = 1;
 // var a = 8;
 // console.log(a , 'a');
@@ -9,43 +12,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const user = `Mustafa`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -59,11 +26,6 @@
 
 
 
-
-
-
-
-
 // console.log(user , `user`);
 
 
@@ -72,7 +34,6 @@
 
 
 // console.log(a , `a`);
-
 
 
 
@@ -209,7 +170,7 @@
 // return success
 // // var search = () => {
 // //     console.log(input.value);
-    
+
 // // }
 
 
@@ -229,7 +190,7 @@
 
 // function search() {
 //     console.log(input.value);
-    
+
 
 
 // console.log(products);
@@ -269,7 +230,7 @@
 // console.log(fruits);
 
 
-    
+
 // let fruits = ["apple" , "mango" , "banana"]
 // const [f1 , , f3] = fruits
 
@@ -277,14 +238,181 @@
 // console.log(f3);
 
 
-const name = `Mustafa`;
-const user = {
-    name :  `Shafay`,
+// const name = `Mustafa`;
+// const user = {
+//     name :  `Shafay`,
+// }
+
+
+// const {name : objName} = user
+
+
+// console.log(name , `name`);
+// console.log(objName , `objName`);
+
+
+
+
+// Class 2
+//Spread Operator
+// let arr = [1,2,3];
+// let arr2 = [4,5,6];
+// let arr3 = [7,8,9]
+// // let arr4 = arr.concat(arr2).concat(arr3)
+// let arr4 = [...arr , ...arr2 , ...arr3]
+// console.log(arr , `arr`);
+// console.log(arr2 , `arr2`);
+// console.log(arr3 , `arr3`);
+// console.log(arr4 , `arr4`);
+
+
+
+
+// const std = {
+//     name : `Mustafa`,
+//     email : `mustafa@gmailcom`,
+//     age : 16,
+
+// }
+
+
+// const course = {
+    
+//     duration : `1.5 years`,
+//     courseName : `Mern Stack`,
+//     trainer : `Jaffar Aman`,
+//     ...std,
+//     email : `shafay@gmail.com`,
+    
+// }
+
+
+// console.log(course);
+
+
+
+//Rest Operator
+// let foo = (city1 , city2, city3, city4, city5,  ...rest) => {
+// console.log(rest);
+
+// }
+
+
+// foo("Karachi", "Lahore", "Quetta", `Hyderabad`, `Pindi`, 12, 34, 5, 4, 98, 65)
+
+
+
+
+// let cities = [1,4,2,4,33,2,4,3,34,5,66,4,5,3]
+// let commonRemove = [...new Set(cities)]
+// console.log(commonRemove , `common Remove`);
+
+
+
+// const arr = [1,4,2,4,33,2,4,3,34,5,66,4,5,3]
+// const newArr = [...new Set(arr)]
+// console.log(arr  , `arr`);
+// console.log(newArr , `newArr`);
+
+
+
+// var a = `Mustafa`;
+// console.log(a , `a`);
+
+// a = `Shafay`
+// let b = a;
+
+// b =  `Ali`
+// console.log(b ,`b`);
+// console.log(a ,`c`);
+
+
+
+
+
+
+
+
+
+
+
+
+// let std = {
+//     name  : `Mustafa`,
+//     age : 16 , 
+//     email : `mustafa@gmail.com`,
+//     skills : {
+//         html : 70,
+//         css : 96,
+//         js : {
+//             eS5 : 70,
+//             es6 : 50 
+//         }
+//     }
+// }
+
+
+
+// std.city = `Lahore`
+// let std2 = {...std}
+// std2.city = `Karachi`
+// std2.country = `Pakistan`
+
+// std2.skills.css = 0
+// let std2 = JSON.stringify(std)
+// std2 = JSON.parse(std2)
+ 
+// std2.skills.css = 0
+
+// std2.skills.js.eS5 = 100
+
+// console.log(std , `std`);
+// console.log(std2 , `std2`);
+
+
+
+// let a = `Mustafa`
+// a = `Shafay`
+
+// let b = a
+
+
+
+// console.log(a , `a`);
+// console.log(b , `b`);
+
+
+
+// let a = `Jaffar`
+// let b = `Jaffar`
+
+
+
+
+// a = `Hammad`
+
+// console.log(a , `a`);
+// console.log(b , `b`);
+
+
+
+let obj1 = {
+    name : `Mustafa`
 }
 
+let obj2 = obj1
 
-const {name : objName} = user
+let obj3 = obj2
 
 
-console.log(name , `name`);
-console.log(objName , `objName`);
+obj3.email = `mustafa@gmail.com`
+
+
+obj1.age = 16
+
+obj2.country = `Pakistan`
+
+
+console.log(obj1 , `obj1`);
+console.log(obj2 , `obj2`);
+console.log(obj3 , `obj3`);
