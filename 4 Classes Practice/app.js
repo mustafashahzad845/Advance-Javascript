@@ -396,23 +396,60 @@
 
 
 
-let obj1 = {
-    name : `Mustafa`
+// let obj1 = {
+//     name : `Mustafa`
+// }
+
+// let obj2 = obj1
+
+// let obj3 = obj2
+
+
+// obj3.email = `mustafa@gmail.com`
+
+
+// obj1.age = 16
+
+// obj2.country = `Pakistan`
+
+
+// console.log(obj1 , `obj1`);
+// console.log(obj2 , `obj2`);
+// console.log(obj3 , `obj3`);
+
+
+
+// Class3
+// let foo = () => {
+//     console.log(`foo`);
+    
+// }
+
+
+
+// foo()
+
+
+
+// console.log(this);
+
+const obj = {
+    name : "Mustafa",
+    lastName : "Shahzad",
+    getName  : {
+        fullName : function ()  {
+                console.log(this);
+              let  puraName = name + lastName 
+
+    //    return this.name + this.lastName
+        
+    }
+    } ,
+    
 }
 
-let obj2 = obj1
-
-let obj3 = obj2
 
 
-obj3.email = `mustafa@gmail.com`
-
-
-obj1.age = 16
-
-obj2.country = `Pakistan`
-
-
-console.log(obj1 , `obj1`);
-console.log(obj2 , `obj2`);
-console.log(obj3 , `obj3`);
+ let ans =obj.getName.fullName()
+//  console.log(`ans` , ans);
+ 
