@@ -277,13 +277,13 @@
 
 
 // const course = {
-    
+
 //     duration : `1.5 years`,
 //     courseName : `Mern Stack`,
 //     trainer : `Jaffar Aman`,
 //     ...std,
 //     email : `shafay@gmail.com`,
-    
+
 // }
 
 
@@ -361,7 +361,7 @@
 // std2.skills.css = 0
 // let std2 = JSON.stringify(std)
 // std2 = JSON.parse(std2)
- 
+
 // std2.skills.css = 0
 
 // std2.skills.js.eS5 = 100
@@ -422,7 +422,7 @@
 // Class3
 // let foo = () => {
 //     console.log(`foo`);
-    
+
 // }
 
 
@@ -433,23 +433,324 @@
 
 // console.log(this);
 
-const obj = {
-    name : "Mustafa",
-    lastName : "Shahzad",
-    getName  : {
-        fullName : function ()  {
-                console.log(this);
-              let  puraName = name + lastName 
+// const obj = {
+//     name : "Mustafa",
+//     lastName : "Shahzad",
+//     getName  : {
+//         fullName : function ()  {
+//                 console.log(this);
+//               let  puraName = obj.name + obj.lastName
+// return puraName
+//     //    return this.name + this.lastName
 
-    //    return this.name + this.lastName
-        
-    }
-    } ,
-    
-}
+//     }
+//     } ,
+
+// }
 
 
 
- let ans =obj.getName.fullName()
+//  let ans =obj.getName.fullName()
+// //  ans()
 //  console.log(`ans` , ans);
- 
+
+
+// function test() {
+//     console.log(arguments);
+
+// }
+
+// test("Karachi" , "Lahore")
+
+
+
+// let  test = ()=> {
+//     console.log(arguments);
+
+// }
+
+// test("Karachi" , "Lahore")
+
+
+// foo()
+
+// let foo = () => {
+//     console.log(`foo`);
+
+// }
+
+
+// greet()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// foo()
+
+
+// let foo =  () =>  {
+//     console.log(`Hello World`);
+
+// }
+
+// foo()
+
+// const foo = () => {
+//     console.log(`Helloo WOrld`);
+
+// }
+
+
+// let Std =  (name , email , age) => {
+//     this.name = name
+//     this.email = email ,
+//     this.age = age
+
+// }
+
+
+// let users = [
+//     new Std(`Mustafa`, `mustafa@gmail.com`, 16),
+//     new Std(`Shafay`, `shafay@gmail.com`, 17),
+//     new Std(`Mahad`, `mahad@gmail.com`, 11),
+//     new Std(`Ahmed`, `ahmed@gmail.com`, 7),
+//     new Std(`Shahzad`, `shahzad@gmail.com`, 50),
+// ]
+
+
+// console.log(users);
+
+
+// let name = `Shafay`
+
+// let std = {
+//     name : `Mustafa`,
+
+
+//    funcGrandParent : {
+//      funcParent :{
+// func : {
+// campus : `SMIT`
+//     ,
+// arrow : () => {
+//         console.log(this)
+//     }
+// }
+//     }
+//    }
+
+
+
+// }
+
+// std.funcGrandParent.funcParent.func.arrow()
+// std.arrow()
+
+
+
+// const age = 25;
+// let checkAge = age >= 18 && age <= 50? `Allow` : `Not Allow`
+// console.log(checkAge);
+
+
+// const age = 50;
+// const gender = `male`
+// let checkCampus = (age >= 18 && age <= 50 && gender === `male`) ? `Head Office Campus` : (age >= 18 && age <= 50 && gender === `female`) ? `ZA Campus` : `Not Allow`
+// console.log(checkCampus);
+
+
+
+// let usersEmail = [`mustafa@gmail.com` , `mahad@gmail.com` , `shafay@gmail.com` , `jaffar@gmail.co m` , `ahmed@gmail.com` , `bilal@gmail.com` ]
+// let checkEmail = usersEmail.find(
+//     (value , index )=>{
+// console.log(value);
+// if(value === `shafay@gmail.com`){
+//     return 123
+
+// }
+
+//     }
+// )
+
+
+// console.log(checkEmail , `"'checkEmail'"`);
+
+
+
+
+// let cities = ["Karachi", "Lahore", "Faisalabad", "Rawalpindi", "Multan", "Hyderabad", "Gujranwala", "Peshawar", "Quetta", "Islamabad", "Sialkot", "Bahawalpur", "Sargodha", "Sukkur", "Larkana", "Sheikhupura", "Rahim Yar Khan", "Jhang", "Gujrat", "Mardan"
+// ];
+
+// console.log(cities);
+
+
+
+// let findCities = cities.find((cities , index)=>{
+// console.log(cities , index);
+
+
+// if(cities === `Larkana`){
+//     return cities , index
+// }
+
+// })
+
+
+// console.log(findCities);
+
+
+
+
+// let baseItems = [
+//   "pen", "pencil", "eraser", "sharpener", "notebook",
+//   "marker", 
+//    "phone", "charger",
+//   "keyboard", "mouse", "monitor", "speaker", "headphones",
+//   "shirt", "pant", "shoes", "socks", "jacket",
+//   "bread", "milk", "egg", "rice"
+//   ,"highlighter", "scale", "glue", "tape",
+//   "scissors", "bag", "bottle", "lunchbox", "chair",
+//   "table", "fan", "light", "phone", "charger",
+//   "keyboard", "mouse", "monitor", "speaker", "headphones",
+//   "shirt", "pant", "shoes", "socks", "jacket",
+//   "bread", "milk", "egg", "rice", "flour",
+//   "sugar", "salt", "tea", "coffee", "juice",
+//   "apple", "banana", "mango", "orange", "grapes",
+//   "carrot", "potato", "onion","marker", "highlighter", "scale",
+//  "monitor", "speaker", "headphones",
+//   "shirt", "pant", "shoes", "socks", "jacket",
+// "milk", "tomato", "cabbage"
+// ];
+
+
+
+// let items = [
+// "pen","pencil","eraser","sharpener","notebook","marker","highlighter","scale","glue","tape",
+// "scissors","bag","bottle","lunchbox","chair","table","fan","light","phone","charger",
+// "keyboard","mouse","monitor","speaker","headphones","shirt","pant","shoes","socks","jacket",
+// "bread","milk","egg","rice","flour","sugar","salt","tea","coffee","juice",
+// "apple","banana","mango","orange","grapes","carrot","potato","onion","tomato","cabbage",
+// "sofa","bed","pillow","blanket","curtain","mirror","clock","calendar","lamp","bucket",
+// "mug","plate","spoon","fork","knife","pan","pot","stove","oven","fridge",
+// "freezer","toaster","blender","juicer","grinder","soap","shampoo","towel","brush","comb",
+// "toothpaste","razor","perfume","cream","lotion","wallet","watch","belt","cap","helmet",
+// "gloves","umbrella","raincoat","sunglasses","camera","tripod","drone","printer","scanner","router",
+// "cable","adapter","battery","remote","fan","heater","cooler","ac","generator","inverter",
+// "drill","hammer","screwdriver","wrench","pliers","saw","ladder","rope","chain","lock",
+// "key","door","window","gate","fence","brick","cement","sand","paint","brush",
+// "roller","canvas","frame","poster","book","magazine","newspaper","file","folder","envelope",
+// "stamp","stapler","pin","clip","board","chalk","duster","projector","screen","mic",
+// "speaker","amplifier","guitar","piano","drum","violin","flute","harmonica","recorder","whistle",
+// "ball","bat","racket","net","goal","helmet","pad","glove","boot","jersey",
+// "trophy","medal","certificate","ticket","passport","visa","card","id","badge","tag",
+// "box","carton","crate","basket","tray","jar","bottle","can","packet","bag",
+// "wrapper","cover","case","holder","stand","rack","shelf","drawer","cabinet","locker",
+// "desk","bench","stool","counter","platform","stage","podium","screen","panel","switch",
+// "socket","plug","wire","pipe","tap","valve","tank","pump","filter","fan",
+// "seed","plant","tree","leaf","flower","grass","soil","fertilizer","pesticide","tool",
+// "tractor","plow","harvester","cart","wheel","engine","gear","brake","clutch","fuel",
+// "diesel","petrol","oil","grease","coolant","radiator","battery","sparkplug","filter","belt",
+// "chain","axle","shaft","bearing","nut","bolt","washer","spring","clip","hook",
+// "ring","bracelet","necklace","earring","chain","pendant","crown","badge","coin","note",
+// "wallet","purse",  "pen", "pencil", "eraser", "sharpener", "notebook",
+//   "marker",    "phone", "charger",  "keyboard", "mouse", "monitor", "speaker", "headphones",  "shirt", "pant", "shoes", "socks", "jacket",  "bread", "milk", "egg", "rice"  ,"highlighter", "scale", "glue", "tape",  "scissors", "bag", "bottle", "lunchbox", "chair",  "table", "fan", "light", "phone", "charger",  "keyboard", "mouse", "monitor", "speaker", "headphones",  "shirt", "pant", "shoes", "socks", "jacket",  "bread", "milk", "egg", "rice", "flour",  "sugar", "salt", "tea", "coffee", "juice",  "apple", "banana", "mango", "orange", "grapes",  "carrot", "potato", "onion","marker", "highlighter", "scale", "monitor", "speaker", "headphones",
+//   "shirt", "pant", "shoes", "socks", "jacket",
+// "milk", "tomato", "cabbage","bag","suitcase","trolley","backpack","folder","file","book","diary",
+// "journal","notepad","sketchbook","color","crayon","paint","brush","palette","easel","canvas",
+// "frame","photo","album","camera","lens","tripod","flash","memory","card","battery",
+// "charger","cable","earphone","headphone","speaker","mic","stand","cover","case","screen",
+// "protector","mousepad","keyboard","monitor","cpu","ups","router","modem","switch","hub",
+// "server","cable","rack","panel","plug","socket","wire","adapter","converter","transformer",
+// "spice","herb","pepper","cinnamon","clove","cardamom","turmeric","coriander","cumin","mustard",
+// "oil","butter","cheese","yogurt","cream","icecream","chocolate","biscuit","cake","cookie",
+// "noodle","pasta","burger","pizza",
+// "plug","wire","pipe","tap","valve",
+// "shaft","bearing","nut","bolt","washer","spring","clip","hook",
+// "ring","bracelet","necklace","earring","chain","pendant","crown","badge","coin","note",
+// "wallet","purse",  "pen", "pencil", "eraser",
+// "scale", "monitor", "speaker", "headphones",
+//   "shirt", "pant", "shoes", "socks", "jacket",
+// "milk", "tomato", "cabbage","bag","suitcase","trolley","backpack","folder","file","book","diary",
+// "journal","notepad","sketchbook","color","crayon","paint","brush","palette","easel","canvas",
+// "frame","photo","album","camera","lens","tripod","flash","memory","card","battery",
+// "charger","cable","earphone","headphone","speaker","mic","stand","cover","case","screen",
+// "protector","mousepad","keyboard","monitor","cpu","sandwich","fries","ketchup","sauce","pickle","jam",
+// "water","soda","drink","shake","smoothie","coffee","tea","juice","milkshake","lassi"
+// ];
+
+// console.log(items);
+
+// let uniqueItems = [...new Set(items)]
+// console.log(uniqueItems , `unique items`);
+
+// let findItem = uniqueItems.find((value , index)=>{
+// console.log(value , index);
+// if(value === `towel`){
+//     return true
+// }
+// })
+
+
+// console.log(findItem , );
+
+
+
+
+// const userEmails = [`mustafa@gmail.com` , `shafay@gmail.com` , `bilal@gmail.com` , `ahmed@gmail.com` , `shahzad@gmail.com` , `raza@gmail.com` , `farooq@gmail.com`]
+
+
+// const checkEmail = userEmails.find(
+//     (email)=>{
+//         console.log(email);
+        
+// if(email === `shahzad@gmail.com`){
+// return true
+// }
+//     }
+// )
+
+
+// console.log(userEmails , `userEmails`);
+
+
+// const checkEmail = userEmails.find(
+//     (email , index)=>{
+// console.log(email , index);
+
+// if(email === `ahmed@gmail.com`){
+//  return 123
+// }
+
+
+
+
+//     }
+
+    
+// )
+
+
+// console.log(checkEmail , `checkEmail`);
