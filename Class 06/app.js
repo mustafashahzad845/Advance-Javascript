@@ -15,6 +15,11 @@ alert("Please Enter your email or password")
 return
 }
 
+if(allUsers === null){
+alert("Email not registered")
+return
+}
+
 const find = allUsers.find((userObj)=>{
 console.log(userObj);
 if(userObj.email == email.value && userObj.password == password.value){
@@ -25,6 +30,7 @@ return true
 
 if(find){
 alert("Login Successfully")
+location.href = `./dashboard.html`
 
 }else{
     alert("Invalid Email or address")
@@ -37,4 +43,24 @@ console.log(find , `find`);
 
 
 
+}
+
+
+
+const passwordTypeManage = ()=>{
+    console.log(`passwordTypeManage`);
+    const eyeImage = document.getElementById("eyeImage")
+    const password = document.getElementById("password")
+
+
+    console.log(password.value , password.type);
+    console.log(eyeImage.src);
+    
+    if(password.type == "password"){
+eyeImage.src = `./Images/eye-open.webp`
+password.type = `text`
+    }else{
+        eyeImage.src = `./Images/eye-close.webp`
+        password.type = `password`
+    }
 }

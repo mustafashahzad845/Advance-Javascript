@@ -4,9 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        body{
+            background: #f3f2f2;
+        }
+        .main-heading{
+            width: 100%;
+            /* background: #FF915C; */
+            margin: 0 auto;
+            padding: 8px 8px 0;
+            /* margin: 12px 0; */
+        }
+        .main-heading h1{
+            color: #fff;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            word-spacing: 4px;
+            background: #FF915C;
+            padding:8px 0;
+
+        }
+        .task-container{
+         width: 50%;
+         margin: 50px auto;
+         /* border: 1px solid red; */
+
+        }
+        .taskHeadingAndBtn{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .taskHeadingAndBtn h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            color: #000;
+            font-weight: 600;
+
+        }
+        .taskHeadingAndBtn button{
+            color: #fff;
+            border: none;
+            outline: none;
+            /* background: #FF915C; */
+padding: 4px;
+            background: #fb843a;
+            width: 100px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+
+        }
+        .taskHeadingAndBtn button:hover{
+                        background: #f87a2b;
+
+        }
+        .input-container input{
+            width: 100%;
+            border: 1px solid lightgray;
+            outline: none;
+            margin: 20px 0;
+            background: transparent;
+            padding: 14px 16.5px ;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #080808;
+        }
+        .input-container input::placeholder{
+              font-size: 16px;
+            color: #888;
+        }
+        .input-container input:focus{
+            border-color: #FF8C42;
+    box-shadow: 0 0 5px rgba(255, 140, 66, 0.3);
+        }
+        .taskDiv{
+            display: flex;
+            background: #fff;
+            border: 1px solid gray;
+            padding: 12px 8px;
+            justify-content: space-between;
+        }
+        #taskText p{
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="main-heading">
+        <h1>TODO APP</h1>
+    </div>
+<div class="task-container">
+<div class="taskHeadingAndBtn">
+<h3>Tasks</h3>
+<button onclick="addTask()">Add Task</button>
+</div>
+
+<div class="input-container">
+    <input type="text" id="input" placeholder="Enter your task">
+</div>
+
+<div id="taskDiv" class="taskDiv">
+<div id="taskText">
+<p>Go to School</p>
+</div>
+
+<div id="taskTime">
+<p>taskTime</p>
+</div>
+
+<div id="taskEdit">
+<p>Edit</p>
+</div>
+
+</div>
+
+</div>
+
 </body>
 <script src="dashboard.js"></script>
 </html>

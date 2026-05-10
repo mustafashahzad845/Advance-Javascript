@@ -26,6 +26,8 @@ if(users == null){
 //first user
 console.log("firstUser");
 localStorage.setItem("users", JSON.stringify([userObj]))
+alert("Signup Successfully")
+location.href = `./index.html`
 
 }else{
     console.log(`Users exist krte hain`);
@@ -78,5 +80,24 @@ location.href = "./index.html"
 }
 
 
+
+
+const passwordTypeManage = ()=>{
+    console.log(`passwordTypeManage`);
+    const eyeImage = document.getElementById("eyeImage")
+    const password = document.getElementById("password")
+
+
+    console.log(password.value , password.type);
+    console.log(eyeImage.src);
+    
+    if(password.type == "password"){
+eyeImage.src = `./Images/eye-open.webp`
+password.type = `text`
+    }else{
+        eyeImage.src = `./Images/eye-close.webp`
+        password.type = `password`
+    }
+}
 
 // console.log(localStorage.length);
