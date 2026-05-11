@@ -80,8 +80,49 @@
 // console.log(myDate);
 
 
-const userDOB = prompt("Enter your DOB")
-const DOB = new Date(userDOB).getTime()
-const userKiDObSolve = DOB/1000/60/60/24/365
-console.log(DOB);
-console.log(userKiDObSolve);
+// const userDOB = prompt("Enter your DOB")
+// const DOB = new Date(userDOB).getTime()
+// const userKiDObSolve = DOB/1000/60/60/24/365
+// console.log(DOB);
+// console.log(userKiDObSolve);
+
+
+
+// console.log(cheezen);
+
+// import cheezen from "./information.js"
+
+// const user = `Jaffar`
+// const email = `jaffar@gmail.com`
+
+// console.log(user ,`user`);
+// console.log(email, `email`);
+
+
+// import {user as userName , user as userEmail} from "./information.js"
+  
+// console.log(userName , `userName`);
+// console.log(userEmail , `userEmail`);
+
+
+
+// class Std{
+//     constructor(name , email , age){
+// this.name = name,
+// this.userEmail = email,
+// this.age = age
+//     }
+// }
+
+
+
+// const stds = [
+//  new Std(`Mustafa`  , `mustafa@gmail.com` , 16),
+//  new Std(`Jaffar`  , `jaffar@gmail.com` , 25),
+// ]
+
+// console.log(stds);
+
+
+
+// console.log(Std);
