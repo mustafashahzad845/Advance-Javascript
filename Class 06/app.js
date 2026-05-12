@@ -64,3 +64,4 @@ password.type = `text`
         password.type = `password`
     }
 }
+

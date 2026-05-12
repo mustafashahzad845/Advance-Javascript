@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <style>
         *{
             margin: 0;
@@ -89,23 +92,72 @@ padding: 4px;
         .taskDiv{
             display: flex;
             background: #fff;
-            border: 1px solid gray;
-            padding: 12px 8px;
+            border: 1px solid lightgray;
+            padding: 16px 8px;
             justify-content: space-between;
+            margin: 16px 0;
         }
+        #taskText {
+            overflow-wrap: break-word;
+            /* flex: 2; */
+            width: 40%;
+            padding: 0 16px 0 0;
+            line-height: 22px;
+            /* border: 1px solid red; */
+        }
+      
         #taskText p{
             font-size: 16px;
             font-weight: 600;
             font-family: Arial, Helvetica, sans-serif;
         
         }
+          #taskTime{
+                        overflow-wrap: break-word;
+            width: 40%;
 
+        }
+        #taskTime p{
+         color: rgb(209, 208, 208);
+        }
+        #taskDelete{
+            /* flex: 1; */
+            width: 20%;
+            /* border: 1px solid blue; */
+            text-align: right;
+            padding: 0 8px 0 0;
+        }
+        #taskDelete i {
+        color: orange;
+        cursor: pointer;
+        }
+        .userSection{
+            display: flex;
+            gap: 12px;
+            border: 1px solid black;
+            width: max-content;
+            padding: 8px 4px;
+            margin: 20px 8px 0;
+        }
+         .userSection p{
+            color: #a6a3a3;
+            font-size: 18px;
+         }
+         .userSection i{
+            font-size: 18px;
+         }
     </style>
 </head>
 <body>
     <div class="main-heading">
         <h1>TODO APP</h1>
     </div>
+<div class="userSection">
+
+    <i class="fa-solid fa-user"></i>
+<p>mustafashahzad845@gmail.com</p>
+</div>
+
 <div class="task-container">
 <div class="taskHeadingAndBtn">
 <h3>Tasks</h3>
@@ -116,20 +168,7 @@ padding: 4px;
     <input type="text" id="input" placeholder="Enter your task">
 </div>
 
-<div id="taskDiv" class="taskDiv">
-<div id="taskText">
-<p>Go to School</p>
-</div>
-
-<div id="taskTime">
-<p>taskTime</p>
-</div>
-
-<div id="taskEdit">
-<p>Edit</p>
-</div>
-
-</div>
+<div id="taskConatinerParent"></div>
 
 </div>
 
