@@ -16,7 +16,7 @@ return
 }
 
 if(allUsers === null){
-alert("Email not registered")
+alert("Invalid Email or password")
 return
 }
 
@@ -28,17 +28,18 @@ return true
 })
 
 
-if(find){
-alert("Login Successfully")
-location.href = `./dashboard.html`
-
-}else{
-    alert("Invalid Email or address")
+if(!find){
+        alert("Invalid Email or address")
+return
 }
 
-console.log(find , `find`);
+alert("Login Successfully")
+localStorage.setItem(`loginUser`, JSON.stringify(find))
+location.href = "./dashboard.html"
+// console.log(find , `find`);
 
 
+// console.log(find);
 
 
 

@@ -193,9 +193,49 @@ margin: 8px auto;
 
 }
 
-@media  only screen and (min-width : 320px) and (max-width : 576px) {
-    
-}
+@media  only screen and  (max-width : 576px) {
+    .Login-Container{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 20px;
+            width: 70%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+         .main-heading{
+            margin: 12px auto 0px;
+        }
+        .main-heading h1{
+            font-weight: 500;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        
+    }
+        @media screen  and (max-width : 460px){
+            .Login-Container{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 20px;
+            width: 80%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        }
+
+        @media screen  and (max-width : 390px){
+            .Login-Container{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 20px;
+            width: 88%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        }
+
     </style>
 </head>
 <body>
@@ -246,7 +286,7 @@ margin: 8px auto;
     
 
     <div class="input-conatiner" id="passwordContainer">
-        <input type="password" id="password" placeholder="Enter Your Password">
+        <input type="password" id="password" placeholder="Enter Your Password" maxlength="30">
         <img src="./Images/eye-close.webp" id="eyeImage" onclick="passwordTypeManage()" alt="">
     <br>
     <br>
